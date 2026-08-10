@@ -14,6 +14,8 @@ public class MigrationRequestDto {
 
     private String image;
 
+    private String migrationNumber;
+
     private MultipartFile imageFile;
 
     private String date;

@@ -18,6 +18,8 @@ public class Migration {
 
     private String image;
 
+    private String migrationNumber;
+
     private String date;
 
     private String name;

@@ -13,6 +13,8 @@ public class MigrationResponseDto {
 
     private Long id;
 
+    private String migrationNumber;
+
     private String image;
 
     private String date;
