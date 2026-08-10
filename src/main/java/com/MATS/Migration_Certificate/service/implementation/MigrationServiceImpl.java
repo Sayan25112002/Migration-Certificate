@@ -25,7 +25,7 @@ public class MigrationServiceImpl implements MigrationService {
     @Override
     public MigrationResponseDto createMigration(MigrationRequestDto migrationRequestDto) {
         Migration migration = migrationMapper.toMigration(migrationRequestDto);
-        migration.setImage();
+        migration.setImage(saveFile(migrationRequestDto.getImageFile()));
     }
 
     @Override
