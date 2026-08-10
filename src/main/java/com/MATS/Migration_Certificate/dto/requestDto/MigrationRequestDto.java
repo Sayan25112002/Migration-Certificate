@@ -13,6 +13,8 @@ public class MigrationRequestDto {
 
     private String image;
 
+    private String imageFile;
+
     private String date;
 
     private String name;
