@@ -66,7 +66,7 @@
                 </reportElement>
                 <box topPadding="5" leftPadding="0"/>
                 <textElement textAlignment="Left">
-                    <font size="9"/>
+                    <font fontName="Times New Roman" size="9"/>
                 </textElement>
                 <textFieldExpression><![CDATA["This is to certify that Mr./Ms./Mrs. "+$P{data}.get("name")+", Son/Daughter/wife of Shri "+$P{data}.get("fatherName")+" & Mother Name - "+$P{data}.get("motherName")+", Application No - "+$P{data}.get("applicationNumber")+" , Enrolment No - "+$P{data}.get("enrollmentNumber")+" has appeared in  "+$P{data}.get("course")+" held in "+$P{data}.get("year")+" with He/she has PASS the examination.<br/>The University has no objection on his/her joining or appearing in examination of any other recognized University/Institution."]]></textFieldExpression>
             </textField>
@@ -96,7 +96,7 @@
                     <property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
                 </reportElement>
                 <box topPadding="5"/>
-                <textElement>
+                <textElement markup="html">
                     <font fontName="NotoSansDevanagari" size="9"/>
                 </textElement>
                 <textFieldExpression><![CDATA["यह प्रमाणित किया जाता है कि श्री/सुश्री/श्रीमती- "+$P{data}.get("naam")+"(पपता: "+$P{data}.get("papaKaNaam")+", माता: -"+$P{data}.get("maaKaNaam")+", आवेदन संख्या: - "+$P{data}.get("aavedanSankhya")+", नामांिन संख्या: "+$P{data}.get("namanthinSankhya")+") ने "+$P{data}.get("saal")+" में आयोजजत "+$P{data}.get("shiksha")+" शिक्षा में भाग शिया और परीक्षा उत्तीिष िी।<br/>किसी अन्य मान्यता प्राप्त पवश्वपवद्यािय/संस्थान में िाशमि होने या परीक्षा देने पर पवश्वपवद्यािय िो िोई आपजत्त नहीं है।<br/>किसी अन्य संस्था/पवश्वपवद्यािय में प्रवेि िेने/परीक्षा में सजममशित होने से इस पवश्वपवद्यािय िो िोई आपजत्त नहीं है"]]></textFieldExpression>
