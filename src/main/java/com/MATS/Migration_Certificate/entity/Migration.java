@@ -13,7 +13,7 @@ import lombok.Setter;
 public class Migration {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY])
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String image;
@@ -48,6 +48,12 @@ public class Migration {
 
     private String shiksha;
 
+    private String controllerOfExamination;
 
+    private String registrar;
+
+    private String verifiedDate;
+
+    private String certificateDate;
 
 }
