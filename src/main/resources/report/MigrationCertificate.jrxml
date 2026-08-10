@@ -11,17 +11,45 @@
     </background>
     <title>
         <band height="89" splitType="Stretch">
-            <property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
+            <property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
             <image scaleImage="FillFrame">
                 <reportElement x="0" y="0" width="555" height="89" uuid="cad6c7e8-ee62-47fb-aebc-c811dead948f"/>
                 <box>
-                    <topPen lineWidth="1.0" lineStyle="Dashed"/>
-                    <leftPen lineWidth="1.0" lineStyle="Dashed"/>
-                    <bottomPen lineWidth="0.0" lineStyle="Dashed"/>
-                    <rightPen lineWidth="1.0" lineStyle="Dashed"/>
+                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
                 </box>
                 <imageExpression><![CDATA[$P{data}.get("image")]]></imageExpression>
             </image>
+            <line>
+                <reportElement x="0" y="0" width="555" height="1" uuid="070f2d43-377f-42b0-86b7-4ba2b73517b6">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineStyle="Solid"/>
+                </graphicElement>
+            </line>
+            <line>
+                <reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="1" height="89" uuid="b5440253-60cb-4606-b284-cd38f1bd93d3">
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineStyle="Solid"/>
+                </graphicElement>
+            </line>
+            <line>
+                <reportElement stretchType="RelativeToTallestObject" x="555" y="0" width="1" height="89" uuid="accf3d96-60be-4b2c-90de-2a7d410ad568">
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineStyle="Solid"/>
+                </graphicElement>
+            </line>
         </band>
     </title>
     <detail>
@@ -101,8 +129,7 @@
                 <textElement markup="html">
                     <font fontName="NotoSansDevanagari" size="11"/>
                 </textElement>
-                <textFieldExpression><![CDATA["यह प्रमाणित किया जाता है कि श्री/सुश्री/श्रीमती- "+$P{data}.get("naam")+" (पिता: "+$P{data}.get("papaKaNaam")+", माता: -"+$P{data}.get("maaKaNaam")+", आवेदन संख्या: - "+$P{data}.get("applicationNumber")+", नामांकन संख्या: "+$P{data}.get("enrollmentNumber")+") ने "+$P{data}.get("year")+" में आयोजित "+$P{data}.get("shiksha")+" शिक्षा में भाग लिया और परीक्षा उत्तीर्ण की।<br/><br />किसी अन्य संस्था/विश्वविद्यालय में प्रवेश लेने/परीक्षा में सम्मिलित होने से इस विश्वविद्यालय को कोई आपत्ति नहीं है"
-]]></textFieldExpression>
+                <textFieldExpression><![CDATA["यह प्रमाणित किया जाता है कि श्री/सुश्री/श्रीमती- "+$P{data}.get("naam")+" (पिता: "+$P{data}.get("papaKaNaam")+", माता: -"+$P{data}.get("maaKaNaam")+", आवेदन संख्या: - "+$P{data}.get("applicationNumber")+", नामांकन संख्या: "+$P{data}.get("enrollmentNumber")+") ने "+$P{data}.get("year")+" में आयोजित "+$P{data}.get("shiksha")+" शिक्षा में भाग लिया और परीक्षा उत्तीर्ण की।<br/><br />किसी अन्य संस्था/विश्वविद्यालय में प्रवेश लेने/परीक्षा में सम्मिलित होने से इस विश्वविद्यालय को कोई आपत्ति नहीं है"]]></textFieldExpression>
             </textField>
             <staticText>
                 <reportElement x="10" y="350" width="268" height="18" uuid="0f35ef36-3765-473d-b3c3-901ed8e6a970">
@@ -199,9 +226,10 @@ This is a system generated document, no seal is required. ]]></text>
                 <reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="1" height="711" uuid="3bb7cf25-b57e-466f-8cf3-2c77688252a1">
                     <property name="com.jaspersoft.studio.unit.width" value="px"/>
                     <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
                 </reportElement>
                 <graphicElement>
-                    <pen lineStyle="Dashed"/>
+                    <pen lineStyle="Solid"/>
                 </graphicElement>
             </line>
             <line>
@@ -210,7 +238,7 @@ This is a system generated document, no seal is required. ]]></text>
                     <property name="com.jaspersoft.studio.unit.height" value="px"/>
                 </reportElement>
                 <graphicElement>
-                    <pen lineStyle="Dashed"/>
+                    <pen lineStyle="Solid"/>
                 </graphicElement>
             </line>
             <line>
@@ -218,7 +246,7 @@ This is a system generated document, no seal is required. ]]></text>
                     <property name="com.jaspersoft.studio.unit.height" value="px"/>
                 </reportElement>
                 <graphicElement>
-                    <pen lineStyle="Dashed"/>
+                    <pen lineStyle="Solid"/>
                 </graphicElement>
             </line>
             <staticText>
