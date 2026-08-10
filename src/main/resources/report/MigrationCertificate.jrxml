@@ -29,18 +29,18 @@
             <property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
             <property name="com.jaspersoft.studio.unit.height" value="px"/>
             <textField>
-                <reportElement x="0" y="10" width="278" height="20" uuid="3e47860f-dfeb-4aa0-9bb9-e51973ff1e9f"/>
-                <box leftPadding="6"/>
+                <reportElement x="10" y="10" width="268" height="20" uuid="3e47860f-dfeb-4aa0-9bb9-e51973ff1e9f"/>
+                <box leftPadding="0"/>
                 <textElement verticalAlignment="Middle"/>
                 <textFieldExpression><![CDATA["MIGRATION NO. "+$P{data}.get("migrationNumber")]]></textFieldExpression>
             </textField>
             <textField>
-                <reportElement x="450" y="10" width="105" height="20" uuid="70091627-5c41-4a85-b389-d4758d324a6d"/>
+                <reportElement x="450" y="10" width="95" height="20" uuid="70091627-5c41-4a85-b389-d4758d324a6d"/>
                 <textElement verticalAlignment="Middle"/>
                 <textFieldExpression><![CDATA["DATE - "+$P{data}.get("date")]]></textFieldExpression>
             </textField>
             <textField>
-                <reportElement x="10" y="50" width="535" height="26" uuid="7cc7f205-4892-481b-84c1-2306059537de">
+                <reportElement x="10" y="50" width="535" height="16" uuid="7cc7f205-4892-481b-84c1-2306059537de">
                     <property name="com.jaspersoft.layout.grid.x" value="0"/>
                     <property name="com.jaspersoft.layout.grid.y" value="-1"/>
                     <property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
@@ -48,14 +48,15 @@
                     <property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
                     <property name="com.jaspersoft.layout.grid.colspan" value="2"/>
                     <property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
                 </reportElement>
-                <textElement textAlignment="Center" verticalAlignment="Middle">
+                <textElement textAlignment="Center" verticalAlignment="Top" markup="html">
                     <font size="12" isBold="true"/>
                 </textElement>
-                <textFieldExpression><![CDATA["MIGRATION CERTIFICATE"]]></textFieldExpression>
+                <textFieldExpression><![CDATA["<u>MIGRATION CERTIFICATE</u>"]]></textFieldExpression>
             </textField>
             <textField>
-                <reportElement x="10" y="76" width="535" height="104" uuid="dfee3bec-a260-4c32-90d8-4171b35b2472">
+                <reportElement x="10" y="66" width="535" height="104" uuid="dfee3bec-a260-4c32-90d8-4171b35b2472">
                     <property name="com.jaspersoft.layout.grid.x" value="0"/>
                     <property name="com.jaspersoft.layout.grid.y" value="-1"/>
                     <property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
@@ -65,13 +66,13 @@
                     <property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
                 </reportElement>
                 <box topPadding="5" leftPadding="0"/>
-                <textElement textAlignment="Left">
-                    <font fontName="Times New Roman" size="9"/>
+                <textElement textAlignment="Left" markup="html">
+                    <font fontName="Times New Roman" size="11"/>
                 </textElement>
-                <textFieldExpression><![CDATA["This is to certify that Mr./Ms./Mrs. "+$P{data}.get("name")+", Son/Daughter/wife of Shri "+$P{data}.get("fatherName")+" & Mother Name - "+$P{data}.get("motherName")+", Application No - "+$P{data}.get("applicationNumber")+" , Enrolment No - "+$P{data}.get("enrollmentNumber")+" has appeared in  "+$P{data}.get("course")+" held in "+$P{data}.get("year")+" with He/she has PASS the examination.<br/>The University has no objection on his/her joining or appearing in examination of any other recognized University/Institution."]]></textFieldExpression>
+                <textFieldExpression><![CDATA["This is to certify that Mr./Ms./Mrs. "+$P{data}.get("name")+", Son/Daughter/wife of Shri "+$P{data}.get("fatherName")+" & Mother Name - "+$P{data}.get("motherName")+", Application No - "+$P{data}.get("applicationNumber")+" , Enrolment No - "+$P{data}.get("enrollmentNumber")+" has appeared in  "+$P{data}.get("course")+" held in "+$P{data}.get("year")+" with He/she has PASS the examination.<br/><br />The University has no objection on his/her joining or appearing in examination of any other recognized University/Institution."]]></textFieldExpression>
             </textField>
             <textField>
-                <reportElement x="10" y="190" width="534" height="22" uuid="c0ae80b5-f530-4b77-b827-feb8df8c0174">
+                <reportElement x="10" y="190" width="534" height="16" uuid="c0ae80b5-f530-4b77-b827-feb8df8c0174">
                     <property name="com.jaspersoft.layout.grid.x" value="0"/>
                     <property name="com.jaspersoft.layout.grid.y" value="-1"/>
                     <property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
@@ -79,14 +80,15 @@
                     <property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
                     <property name="com.jaspersoft.layout.grid.colspan" value="2"/>
                     <property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
                 </reportElement>
-                <textElement textAlignment="Center" verticalAlignment="Bottom">
-                    <font fontName="NotoSansDevanagari" size="15" isBold="true"/>
+                <textElement textAlignment="Center" verticalAlignment="Top" markup="html">
+                    <font fontName="NotoSansDevanagari" size="12" isBold="true"/>
                 </textElement>
-                <textFieldExpression><![CDATA["प्रवजन प्रमाण-पत्र"]]></textFieldExpression>
+                <textFieldExpression><![CDATA["<u>प्रवजन प्रमाण-पत्र</u>"]]></textFieldExpression>
             </textField>
             <textField>
-                <reportElement x="10" y="212" width="534" height="108" uuid="baf2ae62-cbef-4232-b8c2-5d861f071a39">
+                <reportElement x="10" y="206" width="534" height="108" uuid="baf2ae62-cbef-4232-b8c2-5d861f071a39">
                     <property name="com.jaspersoft.layout.grid.x" value="0"/>
                     <property name="com.jaspersoft.layout.grid.y" value="-1"/>
                     <property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
@@ -97,9 +99,10 @@
                 </reportElement>
                 <box topPadding="5"/>
                 <textElement markup="html">
-                    <font fontName="NotoSansDevanagari" size="9"/>
+                    <font fontName="NotoSansDevanagari" size="11"/>
                 </textElement>
-                <textFieldExpression><![CDATA["यह प्रमाणित किया जाता है कि श्री/सुश्री/श्रीमती- "+$P{data}.get("naam")+"(पपता: "+$P{data}.get("papaKaNaam")+", माता: -"+$P{data}.get("maaKaNaam")+", आवेदन संख्या: - "+$P{data}.get("aavedanSankhya")+", नामांिन संख्या: "+$P{data}.get("namanthinSankhya")+") ने "+$P{data}.get("saal")+" में आयोजजत "+$P{data}.get("shiksha")+" शिक्षा में भाग शिया और परीक्षा उत्तीिष िी।<br/>किसी अन्य मान्यता प्राप्त पवश्वपवद्यािय/संस्थान में िाशमि होने या परीक्षा देने पर पवश्वपवद्यािय िो िोई आपजत्त नहीं है।<br/>किसी अन्य संस्था/पवश्वपवद्यािय में प्रवेि िेने/परीक्षा में सजममशित होने से इस पवश्वपवद्यािय िो िोई आपजत्त नहीं है"]]></textFieldExpression>
+                <textFieldExpression><![CDATA["यह प्रमाणित किया जाता है कि श्री/सुश्री/श्रीमती- "+$P{data}.get("naam")+" (पिता: "+$P{data}.get("papaKaNaam")+", माता: -"+$P{data}.get("maaKaNaam")+", आवेदन संख्या: - "+$P{data}.get("applicationNumber")+", नामांकन संख्या: "+$P{data}.get("enrollmentNumber")+") ने "+$P{data}.get("year")+" में आयोजित "+$P{data}.get("shiksha")+" शिक्षा में भाग लिया और परीक्षा उत्तीर्ण की।<br/><br />किसी अन्य संस्था/विश्वविद्यालय में प्रवेश लेने/परीक्षा में सम्मिलित होने से इस विश्वविद्यालय को कोई आपत्ति नहीं है"
+]]></textFieldExpression>
             </textField>
             <staticText>
                 <reportElement x="10" y="350" width="268" height="18" uuid="0f35ef36-3765-473d-b3c3-901ed8e6a970">
@@ -112,14 +115,14 @@
                     <property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
                 </reportElement>
                 <textElement verticalAlignment="Bottom">
-                    <font fontName="Times New Roman" isBold="true"/>
+                    <font fontName="Times New Roman" size="11" isBold="true"/>
                 </textElement>
                 <text><![CDATA[Controller of Examination]]></text>
             </staticText>
             <staticText>
-                <reportElement x="278" y="350" width="266" height="18" uuid="1f06829d-2fa5-4f27-bc8c-a294627521d1"/>
+                <reportElement x="380" y="350" width="164" height="18" uuid="1f06829d-2fa5-4f27-bc8c-a294627521d1"/>
                 <textElement textAlignment="Center" verticalAlignment="Bottom">
-                    <font fontName="Times New Roman" isBold="true"/>
+                    <font fontName="Times New Roman" size="11" isBold="true"/>
                 </textElement>
                 <text><![CDATA[Registrar]]></text>
             </staticText>
@@ -139,14 +142,14 @@
                 <textFieldExpression><![CDATA[$P{data}.get("controllerOfExamination")]]></textFieldExpression>
             </textField>
             <textField>
-                <reportElement x="278" y="368" width="266" height="22" uuid="ad0e43ba-33c9-4d4c-80d0-1cc746283146"/>
+                <reportElement x="380" y="368" width="164" height="22" uuid="ad0e43ba-33c9-4d4c-80d0-1cc746283146"/>
                 <textElement textAlignment="Center">
                     <font fontName="Times New Roman"/>
                 </textElement>
                 <textFieldExpression><![CDATA[$P{data}.get("registrar")]]></textFieldExpression>
             </textField>
             <staticText>
-                <reportElement x="10" y="420" width="535" height="30" uuid="882ef05b-45d1-43a6-bdc0-54e0da56e690">
+                <reportElement x="10" y="400" width="470" height="30" uuid="882ef05b-45d1-43a6-bdc0-54e0da56e690">
                     <property name="com.jaspersoft.layout.grid.x" value="0"/>
                     <property name="com.jaspersoft.layout.grid.y" value="-1"/>
                     <property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
@@ -218,21 +221,6 @@ This is a system generated document, no seal is required. ]]></text>
                     <pen lineStyle="Dashed"/>
                 </graphicElement>
             </line>
-            <textField>
-                <reportElement x="380" y="390" width="165" height="30" uuid="8728bcea-45e7-4a59-99dc-4060ba4521c2">
-                    <property name="com.jaspersoft.layout.grid.x" value="0"/>
-                    <property name="com.jaspersoft.layout.grid.y" value="-1"/>
-                    <property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
-                    <property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
-                    <property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
-                    <property name="com.jaspersoft.layout.grid.colspan" value="2"/>
-                    <property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
-                </reportElement>
-                <textElement verticalAlignment="Middle">
-                    <font fontName="Times New Roman" size="9"/>
-                </textElement>
-                <textFieldExpression><![CDATA["Checked & Verified on "+$P{data}.get("verifiedDate")]]></textFieldExpression>
-            </textField>
             <staticText>
                 <reportElement x="10" y="550" width="535" height="20" uuid="e68df389-c59a-4eaa-8d23-83cc242d8653">
                     <property name="com.jaspersoft.layout.grid.x" value="0"/>
@@ -248,6 +236,21 @@ This is a system generated document, no seal is required. ]]></text>
                 </textElement>
                 <text><![CDATA[Note: The migration certificate is valid for use only once (at a single institution). Repeated use may lead to legal action.]]></text>
             </staticText>
+            <textField>
+                <reportElement x="380" y="440" width="165" height="30" uuid="abc8d208-db7d-40cf-b8ca-6424640b2e5c">
+                    <property name="com.jaspersoft.layout.grid.x" value="0"/>
+                    <property name="com.jaspersoft.layout.grid.y" value="-1"/>
+                    <property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+                    <property name="com.jaspersoft.layout.grid.colspan" value="2"/>
+                    <property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+                </reportElement>
+                <textElement textAlignment="Right" verticalAlignment="Middle">
+                    <font fontName="Times New Roman" size="9"/>
+                </textElement>
+                <textFieldExpression><![CDATA["Checked & Verified on "+$P{data}.get("verifiedDate")]]></textFieldExpression>
+            </textField>
         </band>
     </detail>
 </jasperReport>

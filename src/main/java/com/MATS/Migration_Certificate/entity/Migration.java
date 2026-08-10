@@ -42,12 +42,6 @@ public class Migration {
 
     private String maaKaNaam;
 
-    private String aavedanSankhya;
-
-    private String namanthinSankhya;
-
-    private String saal;
-
     private String shiksha;
 
     private String controllerOfExamination;
