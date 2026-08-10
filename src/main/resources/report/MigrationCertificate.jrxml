@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MigrationCertificate" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1ac82e54-94c0-4b0d-8467-1cb749b383a1">
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+    <parameter name="data" class="java.util.Map"/>
+    <queryString>
+        <![CDATA[]]>
+    </queryString>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="89" splitType="Stretch">
+            <property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.grid.JSSGridBagLayout"/>
+            <image scaleImage="FillFrame">
+                <reportElement x="0" y="0" width="555" height="89" uuid="cad6c7e8-ee62-47fb-aebc-c811dead948f"/>
+                <box>
+                    <topPen lineWidth="1.0" lineStyle="Dashed"/>
+                    <leftPen lineWidth="1.0" lineStyle="Dashed"/>
+                    <bottomPen lineWidth="0.0" lineStyle="Dashed"/>
+                    <rightPen lineWidth="1.0" lineStyle="Dashed"/>
+                </box>
+                <imageExpression><![CDATA[$P{data}.get("image")]]></imageExpression>
+            </image>
+        </band>
+    </title>
+    <detail>
+        <band height="711" splitType="Stretch">
+            <property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <textField>
+                <reportElement x="0" y="10" width="278" height="20" uuid="3e47860f-dfeb-4aa0-9bb9-e51973ff1e9f"/>
+                <box leftPadding="6"/>
+                <textElement verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA["MIGRATION NO. "+$P{data}.get("migrationNumber")]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="450" y="10" width="105" height="20" uuid="70091627-5c41-4a85-b389-d4758d324a6d"/>
+                <textElement verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA["DATE - "+$P{data}.get("date")]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="10" y="50" width="535" height="26" uuid="7cc7f205-4892-481b-84c1-2306059537de">
+                    <property name="com.jaspersoft.layout.grid.x" value="0"/>
+                    <property name="com.jaspersoft.layout.grid.y" value="-1"/>
+                    <property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+                    <property name="com.jaspersoft.layout.grid.colspan" value="2"/>
+                    <property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="12" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA["MIGRATION CERTIFICATE"]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="10" y="76" width="535" height="104" uuid="dfee3bec-a260-4c32-90d8-4171b35b2472">
+                    <property name="com.jaspersoft.layout.grid.x" value="0"/>
+                    <property name="com.jaspersoft.layout.grid.y" value="-1"/>
+                    <property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+                    <property name="com.jaspersoft.layout.grid.colspan" value="2"/>
+                    <property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+                </reportElement>
+                <box topPadding="5" leftPadding="0"/>
+                <textElement textAlignment="Left">
+                    <font size="9"/>
+                </textElement>
+                <textFieldExpression><![CDATA["This is to certify that Mr./Ms./Mrs. "+$P{data}.get("name")+", Son/Daughter/wife of Shri "+$P{data}.get("fatherName")+" & Mother Name - "+$P{data}.get("motherName")+", Application No - "+$P{data}.get("applicationNumber")+" , Enrolment No - "+$P{data}.get("enrollmentNumber")+" has appeared in  "+$P{data}.get("course")+" held in "+$P{data}.get("year")+" with He/she has PASS the examination.<br/>The University has no objection on his/her joining or appearing in examination of any other recognized University/Institution."]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="10" y="190" width="534" height="22" uuid="c0ae80b5-f530-4b77-b827-feb8df8c0174">
+                    <property name="com.jaspersoft.layout.grid.x" value="0"/>
+                    <property name="com.jaspersoft.layout.grid.y" value="-1"/>
+                    <property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+                    <property name="com.jaspersoft.layout.grid.colspan" value="2"/>
+                    <property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="NotoSansDevanagari" size="15" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA["प्रवजन प्रमाण-पत्र"]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="10" y="212" width="534" height="108" uuid="baf2ae62-cbef-4232-b8c2-5d861f071a39">
+                    <property name="com.jaspersoft.layout.grid.x" value="0"/>
+                    <property name="com.jaspersoft.layout.grid.y" value="-1"/>
+                    <property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+                    <property name="com.jaspersoft.layout.grid.colspan" value="2"/>
+                    <property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+                </reportElement>
+                <box topPadding="5"/>
+                <textElement>
+                    <font fontName="NotoSansDevanagari" size="9"/>
+                </textElement>
+                <textFieldExpression><![CDATA["यह प्रमाणित किया जाता है कि श्री/सुश्री/श्रीमती- "+$P{data}.get("naam")+"(पपता: "+$P{data}.get("papaKaNaam")+", माता: -"+$P{data}.get("maaKaNaam")+", आवेदन संख्या: - "+$P{data}.get("aavedanSankhya")+", नामांिन संख्या: "+$P{data}.get("namanthinSankhya")+") ने "+$P{data}.get("saal")+" में आयोजजत "+$P{data}.get("shiksha")+" शिक्षा में भाग शिया और परीक्षा उत्तीिष िी।<br/>किसी अन्य मान्यता प्राप्त पवश्वपवद्यािय/संस्थान में िाशमि होने या परीक्षा देने पर पवश्वपवद्यािय िो िोई आपजत्त नहीं है।<br/>किसी अन्य संस्था/पवश्वपवद्यािय में प्रवेि िेने/परीक्षा में सजममशित होने से इस पवश्वपवद्यािय िो िोई आपजत्त नहीं है"]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="10" y="350" width="268" height="18" uuid="0f35ef36-3765-473d-b3c3-901ed8e6a970">
+                    <property name="com.jaspersoft.layout.grid.x" value="0"/>
+                    <property name="com.jaspersoft.layout.grid.y" value="-1"/>
+                    <property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+                    <property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+                    <property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+                </reportElement>
+                <textElement verticalAlignment="Bottom">
+                    <font fontName="Times New Roman" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Controller of Examination]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="278" y="350" width="266" height="18" uuid="1f06829d-2fa5-4f27-bc8c-a294627521d1"/>
+                <textElement textAlignment="Center" verticalAlignment="Bottom">
+                    <font fontName="Times New Roman" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Registrar]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="10" y="368" width="268" height="22" uuid="f440e743-cad6-45cc-bcaa-f32cf878c8d3">
+                    <property name="com.jaspersoft.layout.grid.x" value="0"/>
+                    <property name="com.jaspersoft.layout.grid.y" value="-1"/>
+                    <property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+                    <property name="com.jaspersoft.layout.grid.colspan" value="1"/>
+                    <property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+                </reportElement>
+                <textElement>
+                    <font fontName="Times New Roman"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{data}.get("controllerOfExamination")]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="278" y="368" width="266" height="22" uuid="ad0e43ba-33c9-4d4c-80d0-1cc746283146"/>
+                <textElement textAlignment="Center">
+                    <font fontName="Times New Roman"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{data}.get("registrar")]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="10" y="420" width="535" height="30" uuid="882ef05b-45d1-43a6-bdc0-54e0da56e690">
+                    <property name="com.jaspersoft.layout.grid.x" value="0"/>
+                    <property name="com.jaspersoft.layout.grid.y" value="-1"/>
+                    <property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+                    <property name="com.jaspersoft.layout.grid.colspan" value="2"/>
+                    <property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+                </reportElement>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="Times New Roman" size="9"/>
+                </textElement>
+                <text><![CDATA[Checked & Verified from the records maintained in the University & he/she can be issued Migration Certificate,
+This is a system generated document, no seal is required. ]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="10" y="500" width="534" height="16" uuid="0ab05e4a-934f-4a27-9440-0c2d2173dddf">
+                    <property name="com.jaspersoft.layout.grid.x" value="0"/>
+                    <property name="com.jaspersoft.layout.grid.y" value="-1"/>
+                    <property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+                    <property name="com.jaspersoft.layout.grid.colspan" value="2"/>
+                    <property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+                </reportElement>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font fontName="Times New Roman"/>
+                </textElement>
+                <textFieldExpression><![CDATA["Certificate downloaded/Printed "+$P{data}.get("certificateDate")]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="10" y="530" width="535" height="20" uuid="1d8694eb-77e7-4ba6-98d7-b8986fa5d4f2">
+                    <property name="com.jaspersoft.layout.grid.x" value="0"/>
+                    <property name="com.jaspersoft.layout.grid.y" value="-1"/>
+                    <property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+                    <property name="com.jaspersoft.layout.grid.colspan" value="2"/>
+                    <property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+                </reportElement>
+                <textElement verticalAlignment="Bottom">
+                    <font fontName="NotoSansDevanagari" size="9" isBold="true"/>
+                </textElement>
+                <text><![CDATA[नोट- प्रवजन प्रमाण-पत्र केवल एक बार (एक ही संस्था में) उपयोग हेतु मान्य है। बार बार उपयोग करने पर अवैधाननक मानते हुए कानूनी काययवाही ककया जा सकता
+]]></text>
+            </staticText>
+            <line>
+                <reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="1" height="711" uuid="3bb7cf25-b57e-466f-8cf3-2c77688252a1">
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineStyle="Dashed"/>
+                </graphicElement>
+            </line>
+            <line>
+                <reportElement stretchType="RelativeToTallestObject" x="555" y="0" width="1" height="711" uuid="d05546ee-9e84-425d-afd1-766a9892e293">
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineStyle="Dashed"/>
+                </graphicElement>
+            </line>
+            <line>
+                <reportElement x="0" y="710" width="555" height="1" uuid="7bc76f61-13a3-49e5-8827-d66bc61a536a">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <graphicElement>
+                    <pen lineStyle="Dashed"/>
+                </graphicElement>
+            </line>
+            <textField>
+                <reportElement x="380" y="390" width="165" height="30" uuid="8728bcea-45e7-4a59-99dc-4060ba4521c2">
+                    <property name="com.jaspersoft.layout.grid.x" value="0"/>
+                    <property name="com.jaspersoft.layout.grid.y" value="-1"/>
+                    <property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+                    <property name="com.jaspersoft.layout.grid.colspan" value="2"/>
+                    <property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+                </reportElement>
+                <textElement verticalAlignment="Middle">
+                    <font fontName="Times New Roman" size="9"/>
+                </textElement>
+                <textFieldExpression><![CDATA["Checked & Verified on "+$P{data}.get("verifiedDate")]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="10" y="550" width="535" height="20" uuid="e68df389-c59a-4eaa-8d23-83cc242d8653">
+                    <property name="com.jaspersoft.layout.grid.x" value="0"/>
+                    <property name="com.jaspersoft.layout.grid.y" value="-1"/>
+                    <property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.weight.y" value="1.0"/>
+                    <property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
+                    <property name="com.jaspersoft.layout.grid.colspan" value="2"/>
+                    <property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+                </reportElement>
+                <textElement verticalAlignment="Top">
+                    <font fontName="Times New Roman" size="9" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Note: The migration certificate is valid for use only once (at a single institution). Repeated use may lead to legal action.]]></text>
+            </staticText>
+        </band>
+    </detail>
+</jasperReport>
