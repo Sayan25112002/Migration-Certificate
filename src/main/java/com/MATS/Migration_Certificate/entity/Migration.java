@@ -44,6 +44,8 @@ public class Migration {
 
     private String shiksha;
 
+    private String qrCode;
+
     private String controllerOfExamination;
 
     private String registrar;

@@ -41,6 +41,8 @@ public class MigrationResponseDto {
 
     private String shiksha;
 
+    private String qrCode;
+
     private String controllerOfExamination;
 
     private String registrar;
