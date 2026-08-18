@@ -28,21 +28,11 @@
                     <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
                     <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
                 </box>
-                <imageExpression><![CDATA[$P{data}.get("image")]]></imageExpression>
+                <imageExpression><![CDATA["C:/Users/SAYAN MAJUMDAR/Downloads/MATSHeader.png"]]></imageExpression>
             </image>
             <line>
                 <reportElement x="0" y="0" width="555" height="1" uuid="070f2d43-377f-42b0-86b7-4ba2b73517b6">
                     <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                </reportElement>
-                <graphicElement>
-                    <pen lineStyle="Solid"/>
-                </graphicElement>
-            </line>
-            <line>
-                <reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="1" height="89" uuid="b5440253-60cb-4606-b284-cd38f1bd93d3">
-                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
-                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
-                    <property name="com.jaspersoft.studio.unit.x" value="px"/>
                 </reportElement>
                 <graphicElement>
                     <pen lineStyle="Solid"/>
@@ -56,6 +46,11 @@
                 <graphicElement>
                     <pen lineStyle="Solid"/>
                 </graphicElement>
+            </line>
+            <line>
+                <reportElement x="0" y="0" width="1" height="89" uuid="9585628d-be13-459e-8f62-0df100b179ec">
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                </reportElement>
             </line>
         </band>
     </title>
@@ -90,7 +85,7 @@
                     <property name="com.jaspersoft.studio.unit.height" value="px"/>
                 </reportElement>
                 <textElement textAlignment="Center" verticalAlignment="Top" markup="html">
-                    <font fontName="SansSerif" size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
+                    <font fontName="SansSerif" size="11" isBold="true" pdfFontName="Helvetica-Bold"/>
                 </textElement>
                 <textFieldExpression><![CDATA["<u>MIGRATION CERTIFICATE</u>"]]></textFieldExpression>
             </textField>
@@ -106,10 +101,10 @@
                     <property name="com.jaspersoft.studio.unit.height" value="px"/>
                 </reportElement>
                 <box topPadding="5" leftPadding="0"/>
-                <textElement textAlignment="Left" markup="html">
+                <textElement textAlignment="Justified" markup="html">
                     <font fontName="Times New Roman" size="12" pdfFontName="Helvetica"/>
                 </textElement>
-                <textFieldExpression><![CDATA["This is to certify that Mr./Ms./Mrs. "+$P{data}.get("name")+", Son/Daughter of Shri "+$P{data}.get("fatherName")+" & Mother Name - "+$P{data}.get("motherName")+", Application No - "+$P{data}.get("applicationNumber")+" , Enrolment No - "+$P{data}.get("enrollmentNumber")+" has appeared in  "+$P{data}.get("course")+" held in "+$P{data}.get("year")+" with He/she has PASS the examination.<br />The University has no objection on his/her joining or appearing in examination of any other recognized University/Institution."]]></textFieldExpression>
+                <textFieldExpression><![CDATA["This is to certify that Mr./Ms./Mrs. "+$P{data}.get("name")+", Son/Daughter of Shri "+$P{data}.get("fatherName")+" & Mother Name - "+$P{data}.get("motherName")+", Application No - "+$P{data}.get("applicationNumber")+" , Enrolment No - "+$P{data}.get("enrollmentNumber")+" has appeared in  "+$P{data}.get("course")+" held in "+$P{data}.get("year")+" with he/she has PASS the examination.<br /><br />The University has no objection on his/her joining or appearing in examination of any other recognized University/Institution."]]></textFieldExpression>
             </textField>
             <textField>
                 <reportElement x="10" y="160" width="534" height="16" uuid="c0ae80b5-f530-4b77-b827-feb8df8c0174">
@@ -138,13 +133,13 @@
                     <property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
                 </reportElement>
                 <box topPadding="5"/>
-                <textElement markup="html">
+                <textElement textAlignment="Justified" markup="html">
                     <font fontName="NotoSansDevanagari" size="12"/>
                 </textElement>
-                <textFieldExpression><![CDATA["यह प्रमाणित किया जाता है कि श्री/सुश्री/श्रीमती- "+$P{data}.get("naam")+" (पिता: "+$P{data}.get("papaKaNaam")+", माता: -"+$P{data}.get("maaKaNaam")+", आवेदन संख्या: - "+$P{data}.get("applicationNumber")+", नामांकन संख्या: "+$P{data}.get("enrollmentNumber")+") ने "+$P{data}.get("year")+" में आयोजित "+$P{data}.get("shiksha")+" शिक्षा में भाग लिया और परीक्षा उत्तीर्ण की।<br />किसी अन्य संस्था/विश्वविद्यालय में प्रवेश लेने/परीक्षा में सम्मिलित होने से इस विश्वविद्यालय को कोई आपत्ति नहीं है।"]]></textFieldExpression>
+                <textFieldExpression><![CDATA["यह प्रमाणित किया जाता है कि श्री/सुश्री/श्रीमती- "+$P{data}.get("naam")+" (पिता - "+$P{data}.get("papaKaNaam")+", माता - "+$P{data}.get("maaKaNaam")+", आवेदन संख्या - "+$P{data}.get("applicationNumber")+", नामांकन संख्या - "+$P{data}.get("enrollmentNumber")+") ने "+$P{data}.get("year")+" में आयोजित "+$P{data}.get("shiksha")+" शिक्षा में भाग लिया और परीक्षा उत्तीर्ण की।<br /><br />किसी अन्य संस्था/विश्वविद्यालय में प्रवेश लेने/परीक्षा में सम्मिलित होने से इस विश्वविद्यालय को कोई आपत्ति नहीं है।"]]></textFieldExpression>
             </textField>
             <staticText>
-                <reportElement x="10" y="360" width="190" height="18" uuid="0f35ef36-3765-473d-b3c3-901ed8e6a970">
+                <reportElement x="10" y="385" width="190" height="18" uuid="0f35ef36-3765-473d-b3c3-901ed8e6a970">
                     <property name="com.jaspersoft.layout.grid.x" value="0"/>
                     <property name="com.jaspersoft.layout.grid.y" value="-1"/>
                     <property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
@@ -160,14 +155,14 @@
                 <text><![CDATA[Controller of Examination]]></text>
             </staticText>
             <staticText>
-                <reportElement x="380" y="360" width="164" height="18" uuid="1f06829d-2fa5-4f27-bc8c-a294627521d1"/>
+                <reportElement x="380" y="385" width="164" height="18" uuid="1f06829d-2fa5-4f27-bc8c-a294627521d1"/>
                 <textElement textAlignment="Center" verticalAlignment="Bottom">
                     <font fontName="Times New Roman" size="11" isBold="true" pdfFontName="Times-Bold"/>
                 </textElement>
                 <text><![CDATA[Registrar]]></text>
             </staticText>
             <staticText>
-                <reportElement x="10" y="378" width="190" height="22" uuid="858fbef4-2205-4894-9148-24e781a9f2dc">
+                <reportElement x="10" y="403" width="190" height="12" uuid="858fbef4-2205-4894-9148-24e781a9f2dc">
                     <property name="com.jaspersoft.layout.grid.x" value="0"/>
                     <property name="com.jaspersoft.layout.grid.y" value="-1"/>
                     <property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
@@ -175,6 +170,7 @@
                     <property name="com.jaspersoft.layout.grid.rowspan" value="1"/>
                     <property name="com.jaspersoft.layout.grid.colspan" value="1"/>
                     <property name="com.jaspersoft.layout.grid.weight.fixed" value="false"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
                 </reportElement>
                 <textElement textAlignment="Left" verticalAlignment="Top">
                     <font fontName="Times New Roman" size="10"/>
@@ -182,14 +178,16 @@
                 <text><![CDATA[MCDOE, MATS UNIVERSITY RAIPUR]]></text>
             </staticText>
             <staticText>
-                <reportElement x="380" y="378" width="164" height="22" uuid="766a4833-9613-414c-9070-5e58f6d170a7"/>
+                <reportElement x="380" y="403" width="164" height="12" uuid="766a4833-9613-414c-9070-5e58f6d170a7">
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
                 <textElement textAlignment="Center">
                     <font fontName="Times New Roman" size="10"/>
                 </textElement>
                 <text><![CDATA[MATS UNIVERSITY RAIPUR]]></text>
             </staticText>
             <staticText>
-                <reportElement x="10" y="407" width="410" height="30" uuid="882ef05b-45d1-43a6-bdc0-54e0da56e690">
+                <reportElement x="10" y="424" width="410" height="30" uuid="882ef05b-45d1-43a6-bdc0-54e0da56e690">
                     <property name="com.jaspersoft.layout.grid.x" value="0"/>
                     <property name="com.jaspersoft.layout.grid.y" value="-1"/>
                     <property name="com.jaspersoft.layout.grid.weight.x" value="1.0"/>
@@ -319,6 +317,17 @@ This is a system generated document, no seal is required.
                     <jr:codeExpression><![CDATA[$P{data}.get("qrCode")]]></jr:codeExpression>
                 </jr:QRCode>
             </componentElement>
+            <image scaleImage="FillFrame">
+                <reportElement x="40" y="360" width="120" height="24" uuid="091ec8ed-a30f-4775-a717-2927cff29c98"/>
+                <imageExpression><![CDATA["C:/Users/SAYAN MAJUMDAR/Downloads/controller_2025-semester-1.png"]]></imageExpression>
+            </image>
+            <image scaleImage="FillFrame">
+                <reportElement x="408" y="354" width="120" height="30" uuid="ccf0891b-c55e-49d5-8030-8f0091f7fce2">
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <imageExpression><![CDATA["C:/Users/SAYAN MAJUMDAR/Downloads/gokulji sign.png"]]></imageExpression>
+            </image>
         </band>
     </detail>
 </jasperReport>
